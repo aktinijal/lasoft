@@ -10,13 +10,13 @@ body{
     border: 1px solid #f1c75f;
 }
 
-#banner .img-wrapper{
+.banner .img-wrapper{
     height: 350px;
     overflow: hidden;
     text-align: center;
 }
 
-#banner img{
+.banner img{
     width: 100%;
 }
 
