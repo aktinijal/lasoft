@@ -1,0 +1,507 @@
+body {
+    font-family: 'Geometron Pro Angular', sans-serif;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#header {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    float: left;
+}
+
+.menu {
+    float: right;
+    padding-top: 5px;
+}
+
+.menu li {
+    margin-right: 40px;
+    float: left;
+    line-height: 43px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    display: inline-block;
+    height: 43px;
+    text-transform: uppercase;
+    color: #5b5a59;
+}
+
+.menu a:hover {
+    color: #f1c75f;
+    border-bottom: 1px solid #f1c75f;
+}
+
+.menu .button {
+    width: 120px;
+    text-align: center;
+    background-color: #eab146;
+    border-radius: 5%;
+}
+
+.menu .button:hover{
+    color: #fff;
+    background-color: #f1bc56;
+}
+
+
+/********HOME********/
+
+#home {
+    height: 700px;
+    padding-top: 300px;
+    text-align: left;
+    color: #fff;
+    background: #f0f0f0 url(../img/banner.png) no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#home h1 {
+    color: #303030;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+    font: 35px/35px Arial, sans-serif;
+}
+
+#home h2 {
+    color: #555555;
+    font: 20px/20px Arial, sans-serif;
+}
+
+
+/****************************ABOUT***************************/
+
+.title {
+    margin-top: 95px;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.line {
+    margin: 30px auto 65px;
+    height: 2px;
+    width: 110px;
+    background-color: #eab146;
+}
+
+.descr {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 18px;
+    color: #5a585b;
+}
+
+.about-img {
+    padding-left: 0;
+    height: 290px;
+    overflow: hidden;
+}
+
+#services .row {
+    margin-bottom: 50px;
+}
+
+#services img {
+    float: left;
+}
+
+#services h2 {
+    margin: 3px 0 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #555555;
+}
+
+#services p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #707070;
+}
+
+
+/*********************portfolio*******************/
+
+#portfolio {
+    background-color: #f9f9f9;
+}
+
+.filter {
+    margin-bottom: 20px;
+}
+
+.filter li a {
+    height: 52px;
+    float: left;
+}
+
+.filter a {
+    text-transform: uppercase;
+    color: #777777;
+    font-size: 14px;
+}
+
+.filter a:hover {
+    color: #eea924;
+    border-bottom: 2px solid #eea924;
+}
+
+#porfolio img {
+    height: 285px;
+}
+
+.portfolio-img {
+    padding-right: 15px;
+    overflow: hidden;
+}
+
+#portfolio h5 {
+    margin: 30px 0;
+    color: #393939;
+    font-size: 18px;
+}
+
+.porfolio-button {
+    margin: 30px auto 80px;
+    display: block;
+    width: 106px;
+}
+
+.w-b-btn {
+    display: block;
+    text-decoration: none;
+    height: 38px;
+    border: 1px solid #555555;
+    text-align: center;
+    font-size: 12px;
+    line-height: 38px;
+    border-radius: 5%;
+    color: #555555;
+}
+
+.w-b-btn:hover {
+    border: 1px solid #000;
+    color: #000;
+}
+
+
+/*************************SHOWCASE*******************/
+
+#showcase {
+    color: #333333;
+    background-color: #eea924;
+    font: 'Geometron Pro Angular 700', sans-serif;
+}
+
+.showcase-title {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+#showcase h1 {
+    font-size: 35px;
+}
+
+#next {
+    float: right;
+}
+
+#showcase h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#showcase h3 {
+    margin: 50px 0 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#showcase p {
+    margin: 25px 0 15px;
+    font-size: 14px;
+}
+
+.showcase-services ul {
+    font-size: 14px;
+    list-style-image: url('../img/ul-ellipse.png');
+}
+
+.showcase-services li,
+.technologies li {
+    margin-bottom: 10px;
+}
+
+#showcase .img-wrapper {
+    width: 98%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#showcase .img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.technologies {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.showcase-button {
+    width: 127px;
+}
+
+
+/*************************Testimonials*******************/
+
+.testimonials-item {
+    font-size: 16px;
+    text-align: center;
+}
+
+.avatar {
+    margin: 40px auto 70px;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 75px;
+    height: 75px;
+}
+
+#testimonials .description {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+#testimonials .name {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+#testim-buttons {
+    margin: 50px 0 100px;
+    text-align: center;
+}
+
+#testim-buttons .left-btn {
+    margin-right: 12px;
+}
+
+
+/*************************philosofy*************************/
+
+#philosofy {
+    background-color: #f9f9f9;
+}
+
+#philosofy img {
+    width: 100%;
+    height: 100%;
+}
+
+#philosofy .title {
+    margin-top: 70px;
+}
+
+#philosofy ul {
+    font-size: 14px;
+    line-height: 24px;
+    list-style-image: url('../img/ul-philosofy.png');
+}
+
+#philosofy li {
+    margin-bottom: 10px;
+}
+
+#philosofy .info {
+    padding-left: 60px;
+    text-align: left;
+}
+
+
+/****************************clients*************************/
+
+#clients .title {
+    margin-bottom: 65px;
+}
+
+.first-client {
+    margin-right: 60px;
+}
+
+#clients .img-wrapper{
+    height: 30px;
+    line-height: 60px;
+}
+
+
+/*****************************TEAM**********************/
+
+#team {
+    margin-top: 100px;
+    text-align: center;
+    height: 427px;
+    color: #fefefe;
+    background: #f0f0f0 url(../img/team-overlay.png) no-repeat center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#team .title {
+    margin: 140px 0 40px;
+}
+
+#team h3 {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.team-btn {
+    margin-top: 45px;
+    margin-bottom: 90px;
+    color: #fefefe;
+    border: 1px solid #fefefe;
+}
+
+
+/*******************************FORM*********************/
+
+#form .title {
+    color: #eea924;
+}
+
+#form h3 {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #555555;
+}
+
+#form p {
+    margin: 25px 0 5px;
+    font-size: 14px;
+    color: #707070;
+}
+
+form {
+    margin-left: 40px;
+}
+
+input[type="text"] {
+    width: 362px;
+    height: 47px;
+}
+
+textarea {
+    width: 362px;
+}
+
+.form-button {
+    margin: 20px 0 100px;
+    width: 362px;
+    height: 38px;
+    background-color: #eea924;
+    color: #ffffff;
+    border: 1px solid #eea924;
+    border-radius: 3px;
+}
+
+.form-button:hover{
+    background-color: #fcba39;
+}
+
+
+/************************FOOTER**************************/
+
+#footer {
+    padding-bottom: 38px;
+    background-color: #303030;
+    color: #ffffff;
+}
+
+#footer .contact-us {
+    font-size: 16px;
+}
+
+#footer .logo {
+    margin:40px 0 30px;
+}
+
+#footer h1 {
+    font-size: 33px;
+    line-height: 43px;
+}
+
+.contact-us h3 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.contact-us p {
+    margin-bottom: 30px;
+}
+
+#footer .navigation {
+    margin-top: 125px;
+}
+
+#footer h2 {
+    margin-bottom: 28px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+#footer .social {
+    margin-top: 125px;
+}
+
+.social-item {
+    position: relative;
+    margin-right: 14px;
+    float: left;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: #6f6f6f;
+    border-radius: 2px;
+}
+
+.social-item img {
+    position: absolute;
+    bottom: 10px;
+    left: 6px;
+}
+
+.fb img {
+    left: 10px;
+}
+
+footer {
+    padding: 10px 5px 10px 0;
+    background-color: #131313;
+    font-size: 10px;
+    color: #ffffff;
+}
