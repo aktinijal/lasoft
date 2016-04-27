@@ -8,64 +8,75 @@ body {
 }
 
 #header {
-    position: absolute;
+    position: fixed;
+/*
+    background-color: #fff;
+    top: 0;
+*/
     top: 60px;
     left: 0;
     right: 0;
 }
 
-.logo {
-    float: left;
-}
-
 .menu {
-    float: right;
     padding-top: 5px;
 }
 
 .menu li {
-    margin-right: 40px;
-    float: left;
-    line-height: 43px;
+    margin-right: 35px;
+    float: left;  
 }
 
 .menu li:last-child {
     margin-right: 0;
 }
 
-.menu a {
+.menu a, #touch-menu {
     display: inline-block;
     height: 43px;
+    line-height: 43px;
+    font-weight: bold;
     text-transform: uppercase;
-    color: #5b5a59;
+    color: #303030;
 }
 
-.menu a:hover {
-    color: #f1c75f;
-    border-bottom: 1px solid #f1c75f;
+#touch-menu{
+    display: none;
+}
+
+.menu a:hover, #touch-menu {
+    color: #eab146;
+/*    border-bottom: 2px solid #eab146;*/
+}
+#touch-menu:hover{
+    color: #dfa415;
+/*    border-bottom: 2px solid #dfa415;*/
+}
+#touch-menu:focus, #touch-menu:active{
+    text-decoration: none;
 }
 
 .menu .button {
     width: 120px;
     text-align: center;
-    background-color: #eab146;
+    background-color: #eea924;
     border-radius: 5%;
 }
 
 .menu .button:hover{
     color: #fff;
-    background-color: #f1bc56;
+    background-color: #ffbb15;
 }
 
 
 /********HOME********/
 
 #home {
+    color: #303030;
     height: 700px;
     padding-top: 300px;
     text-align: left;
-    color: #fff;
-    background: #f0f0f0 url(../img/banner.png) no-repeat center bottom;
+    background: #f0f0f0 url(../img/banner.jpg) no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,14 +84,12 @@ body {
 }
 
 #home h1 {
-    color: #303030;
     margin-bottom: 45px;
     text-transform: uppercase;
     font: 35px/35px Arial, sans-serif;
 }
 
 #home h2 {
-    color: #555555;
     font: 20px/20px Arial, sans-serif;
 }
 
@@ -464,18 +473,18 @@ textarea {
     margin-bottom: 30px;
 }
 
-#footer .navigation {
+#footer .navigation, #footer .social {
     margin-top: 125px;
+/*    margin-left: 0;*/
+}
+#footer .social{
+    margin-left: 0;
 }
 
 #footer h2 {
     margin-bottom: 28px;
     font-size: 18px;
     text-transform: uppercase;
-}
-
-#footer .social {
-    margin-top: 125px;
 }
 
 .social-item {
@@ -505,3 +514,42 @@ footer {
     font-size: 10px;
     color: #ffffff;
 }
+
+
+
+
+/********************MEDIA*****************************/
+@media (max-width: 768px){
+    .menu{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+    .menu li{
+        float: none;
+        margin-right: 0;
+    }
+    .menu li a{
+        
+    }
+    #touch-menu{
+        display: block;
+        text-align: right;
+    }
+    .menu .button{
+        width: 100%;
+        border-radius: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
