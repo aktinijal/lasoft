@@ -2,13 +2,6 @@ body{
     font-family: 'Geometron Pro Angular', sans-serif;
 }
 
-header{
-    padding-top: 40px;
-    padding-bottom: 23px;
-    box-shadow: 0 6px 2px -2px #eeeeee;
-}
-
-
 .menu .hire-button{
     height: 43px;
     width: 120px;

@@ -1,3 +1,6 @@
+.none-margin-l{
+    margin-left: 0;
+}
 body {
     font-family: 'Geometron Pro Angular', sans-serif;
 }
@@ -7,19 +10,27 @@ body {
     padding-right: 0;
 }
 
-#header {
+header {
     position: fixed;
-/*
-    background-color: #fff;
+    height: 80px;
+    line-height: 80px;
     top: 0;
-*/
-    top: 60px;
     left: 0;
     right: 0;
+    background-color: #fff;
+    z-index: 100;
+    box-shadow: 0 6px 2px -2px #eeeeee;
 }
 
-.menu {
-    padding-top: 5px;
+.helper{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo img{
+    vertical-align: middle;
+    max-height: 45px;
 }
 
 .menu li {
@@ -31,7 +42,7 @@ body {
     margin-right: 0;
 }
 
-.menu a, #touch-menu {
+.menu a {
     display: inline-block;
     height: 43px;
     line-height: 43px;
@@ -40,20 +51,40 @@ body {
     color: #303030;
 }
 
-#touch-menu{
-    display: none;
+.menu a:hover {
+    color: #eab146;
+    border-bottom: 2px solid #eab146;
 }
 
-.menu a:hover, #touch-menu {
-    color: #eab146;
-/*    border-bottom: 2px solid #eab146;*/
+
+
+
+#touch-menu {
+    display: none;
+    position: absolute;
+    top: 45%;
+    right: 30px;
+    height: 100px;
 }
-#touch-menu:hover{
-    color: #dfa415;
-/*    border-bottom: 2px solid #dfa415;*/
+
+.fluently{
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
 }
-#touch-menu:focus, #touch-menu:active{
-    text-decoration: none;
+
+#touch-menu img{
+    vertical-align: middle;
+    max-height: 45px;
+}
+
+.zoom:hover {
+   transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -moz-transform: scale(1.2);
 }
 
 .menu .button {
@@ -475,10 +506,6 @@ textarea {
 
 #footer .navigation, #footer .social {
     margin-top: 125px;
-/*    margin-left: 0;*/
-}
-#footer .social{
-    margin-left: 0;
 }
 
 #footer h2 {
@@ -494,18 +521,21 @@ textarea {
     width: 35px;
     height: 35px;
     text-align: center;
-    background-color: #6f6f6f;
-    border-radius: 2px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.social-item:hover{
+    background-color: #eea924;
 }
 
 .social-item img {
     position: absolute;
-    bottom: 10px;
-    left: 6px;
-}
-
-.fb img {
-    left: 10px;
+    bottom: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    
 }
 
 footer {
@@ -520,17 +550,23 @@ footer {
 
 /********************MEDIA*****************************/
 @media (max-width: 768px){
+    header{
+        background-color: #fff;
+    }
     .menu{
         display: none;
         width: 100%;
+        background-color: #e0e0e0;
         text-align: center;
     }
     .menu li{
         float: none;
         margin-right: 0;
+         height: 45px;
     }
     .menu li a{
         
+        height: 45px;
     }
     #touch-menu{
         display: block;
