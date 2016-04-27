@@ -51,12 +51,10 @@ header {
     color: #303030;
 }
 
-.menu a:hover {
+.menu a:hover{
     color: #eab146;
     border-bottom: 2px solid #eab146;
 }
-
-
 
 
 #touch-menu {
