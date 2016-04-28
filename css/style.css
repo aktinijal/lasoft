@@ -72,7 +72,6 @@ body {
     -moz-transform: scale(1.1);
 }
 .menu .show-popup {
-    /*    zoom:1;*/
     width: 120px;
     text-align: center;
     background-color: #eea924;
@@ -83,7 +82,7 @@ body {
     background-color: #ffbb15;
 }
 
-/*******************POPUP****************/
+/*******************FORM-POPUP****************/
 
 .popup,  .project-popup{
     line-height: none;
@@ -92,7 +91,7 @@ body {
     opacity: 0.7;
     width: 100%;
     height: 100%;
-    z-index: 9998;
+    z-index: 9995;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -129,7 +128,7 @@ body {
 .popup-form {
     display: none;
     line-height: 30px;
-    z-index: 9999;
+    z-index: 9996;
     position: fixed;
     margin-left: 50%;
     top: 25px;
@@ -138,10 +137,19 @@ body {
     background-color: #ffffff;
 }
 
+
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9997;
+}
+/*******************PORTFOLIO-POPUP****************/
+
 .popup-project{
     display: none;
     line-height: 30px;
-    z-index: 9999;
+    z-index: 9996;
     position: fixed;
     margin-left: 25%;
     top: 25px;
@@ -150,16 +158,23 @@ body {
     background-color: #ffffff;
 }
 
+
+#project-box{
+    text-align: left;
+    background-color: #F0F0F0;
+    color: #924949;
+}
 .popup-img-wrapper{
-    width: 500px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+}
+.popup-img-wrapper img{
+/*    width: 500px;*/
+    height: 200px;
+    width: auto;
     
 }
 
-.close-btn{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
 
 /***********************HOME*********************/
@@ -304,25 +319,19 @@ body {
 }
 */
 #showcase h2 {
-    font-size: 25px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 #showcase h3 {
-    margin: 30px 0 20px;
-    font-size: 20px;
+    margin: 20px 0 10px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 #showcase p {
     margin: 25px 0 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
-.showcase-services ul {
-    font-size: 16px;
-    list-style-image: url('../img/ul-ellipse.png');
-}
-.showcase-services li, .technologies li {
-    margin-bottom: 10px;
-}
+
 #showcase .img-wrapper {
     width: 98%;
     height: 100%;
@@ -337,6 +346,7 @@ body {
     font-size: 14px;
 }
 .showcase-button {
+    margin-right: 25px;
     width: 127px;
 }
 
