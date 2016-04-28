@@ -247,6 +247,7 @@ body {
 #portfolio {
     background-color: #f9f9f9;
 }
+/*
 .filter {
     margin-bottom: 20px;
 }
@@ -262,6 +263,7 @@ body {
     color: #eea924;
     border-bottom: 2px solid #eea924;
 }
+*/
 
 .portfolio-img img {
     width: 300px;
@@ -328,7 +330,7 @@ body {
     text-transform: uppercase;
 }
 #showcase p {
-    margin: 25px 0 15px;
+    margin: 15px 0 10px;
     font-size: 14px;
 }
 
@@ -346,7 +348,7 @@ body {
     font-size: 14px;
 }
 .showcase-button {
-    margin-right: 25px;
+    margin-right: 20px;
     width: 127px;
 }
 
@@ -386,6 +388,7 @@ body {
 /*************************philosofy*************************/
 
 #philosofy {
+    height: 371px;
     background-color: #f9f9f9;
 }
 #philosofy img {
@@ -474,6 +477,10 @@ body {
 .form textarea {
     width: 362px;
 }
+.form input:focus, .form textarea:focus{
+    border: 1px solid #000;
+}
+
 .form-button {
     margin: 20px 0 100px;
     width: 362px;
@@ -573,5 +580,9 @@ footer {
     .menu .show-popup {
         width: 100%;
         border-radius: 0;
+    }
+    
+    .title {
+        margin-top: 60px;
     }
 }
