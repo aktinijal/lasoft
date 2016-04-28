@@ -22,19 +22,20 @@
     <!--    <link href="http://allfont.ru/allfont.css?fonts=roboto-bold-condensed" rel="stylesheet" type="text/css" />-->
 
 
-<!--
+    <!--
 
 <script type="text/javascript" src="js/angular.min.js"></script>
 -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
 
 </head>
 
 <body>
     <div id="wrapper" class="container-fluid">
-        <header class="row clearfix">
+        <div class="header row clearfix">
             <div class="col-md-10 col-md-offset-1">
 
                 <div class="logo left">
@@ -46,20 +47,45 @@
                     <span class="helper">
                     <img src="img/menu.png" alt="" height="43px;">
                     </a>
-                   
+
                     <ul class="menu right">
                         <li><a href="home.html">Home</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="works.html">Works</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#" class="button">Hire us</a></li>
-                    </ul>    
-                          
+                        <li><a href="#" class="show-popup" iddiv="box">Hire us</a></li>      
+                    </ul>
+
+
+<!---------   POPUP      --------->
+<div class="popup" opendiv=""></div>
+
+        <div id="box" class="popup-form" style="left:-225px; width:450px;">
+           <div class="form-reg">
+                   <a href="#" class="close-btn"><img src="img/close.png" alt=""></a>
+                    <h3>Become our client and get the best services <br> and emotions with us!</h3>
+                    <form action="">
+                        <p>Tell us please what is your name?</p>
+                        <input type="text" required>
+                        <p>Type your e-mail, please</p>
+                        <input type="text" required>
+                        <p>Also your skype login</p>
+                        <input type="text">
+                        <p>Maybe you have some comment? </p>
+                        <textarea name="" id="" rows="1"></textarea>
+                        <input type="submit" class="form-button" value="thanks for trust!">
+                    </form>
+          
+        </div>
+           
+        </div>
+  <!-------  END OF POPUP      ------->
+
                    </div>
-            </header>
-        
-                
+            </div>
+
+
             <div id="home">
                 <div class="container">
                     <h1>WE ARE LA SOFT</h1>
@@ -68,14 +94,14 @@
     </div>
 
     <div id="about">
-       
+
 <!--
        <label>Имя:</label>
 	    <input type="text" ng-model="yourName">
 	    <hr>
 	    <h1>Привет,  { { yourName  } }!</h1>
 -->
-       
+
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
 
@@ -107,7 +133,7 @@
                     <div class="line"></div>
 
                     <div class="row">
-                       
+
                         <div class="none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1">
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-1 col-xs-offset-1 zoom fluently none-margin-l">
@@ -143,7 +169,7 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div class="none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1">
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-1 col-xs-offset-1 zoom fluently none-margin-l">
@@ -185,92 +211,135 @@
         </div>
         <!--end of #services-->
 
-        <div id="portfolio">
+      
+<!-------------------------------------Work-1-POPUP----------------------------->
+    <div class="project-popup" opendiv=""></div>
+        <div id="box-2" class="popup-project" style="left:-225px; width:1200px;">
+                   <a href="#" class="close-btn"><img src="img/close.png" alt=""></a>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="popup-img-wrapper">
+                                <img src="img/works/works-AC-2.jpg" alt="" width="500px">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <h2>COMPUZZ DASHBOARD PROJECT</h2>
+                            <h3>description</h3>
+                            <p>LaSoft is a Web Development Agency that provides high quality services as Compuzz dashboard is a server application that connects brand product resellers,
+manufacture companies  and usual customers. The application gives you an ability to
+manage orders involving customers and  manufacture companies, create an image 
+collection separately for each customer, track time of employees, and start email 
+marketing campaigns.</p>
+
+                            <h3>technologies</h3>
+                            <ul class="technologies">
+                                <li>Front-end: JavaScript, Backbone.js, Marionette.js , Underscore.js, Require.js,  Aura.js,  Node.js</li>
+                                <li>Frameworks: Bootstrap.css,  Jquery</li>
+                                <li>Back-end: Java</li>
+                                <li>Source control: Github, Bitbucket</li>
+                                <li>Database: MySQL</li>
+                            </ul>
+                            <h3>Customer Country</h3>
+                            <p>Belgium</p>
+
+                            <a href="" class="showcase-button w-b-btn right">VIEW PROJECT</a>
+                        </div>
+
+                    </div>
+          
+        </div>
+ <!-----------------------------END OF Work-1-POPUP----------------------------->                     
+      
+      
+      
+       <div id="portfolio">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h1 class="title">our recent works</h1>
-                    <div class="line"></div>
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            <ul class="filter">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <li><a href="#">Ui Ux</a></li>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <li><a href="#">branding</a></li>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <li><a href="#">Front-end</a></li>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <li><a href="#">back-end</a></li>
-                                    </div>
-                                </div>
-                            </ul>
+                       <div class="line"></div>
+                       <div class="row">
+                       <div class="col-md-6 col-md-offset-3">
+                        <ul class="filter">
+                           <div class="row">
+                            <div class="col-md-3 col-sm-3 col-xs-3"><li><a href="#">Ui Ux</a></li></div> 
+                            <div class="col-md-3 col-sm-3 col-xs-3"><li><a href="#">branding</a></li></div> 
+                            <div class="col-md-3 col-sm-3 col-xs-3"><li><a href="#">Front-end</a></li></div> 
+                            <div class="col-md-3 col-sm-3 col-xs-3"><li><a href="#">back-end</a></li></div> 
+                            </div>
+                        </ul>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1 portfolio-img">
-                            <img src="img/portfolio.png" alt="">
-                            <h5>Project Name</h5>
                         </div>
-                        <div class="none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1 portfolio-img">
-                            <img src="img/portfolio.png" alt="">
-                            <h5>Project Name</h5>
+                        
+                         <div class="row">
+                            <div class="portfolio-img none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1">
+                                <img class="zoom fluently show-project" src="img/works/works-AC-1.jpg" alt="" projectdiv="box-2">
+                                <h5>Project Name</h5>
+                            </div>
+                            <div class="portfolio-img none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1">
+                                <img class="zoom fluently show-project" src="img/works/works-TS-1.jpg" alt="" projectdiv="box-2">
+                                <h5>Project Name</h5>
+                            </div>
+                            <div class="portfolio-img none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1">
+                                <img class="zoom fluently show-project" src="img/works/works-OJ-1.jpg" alt="" projectdiv="box-2">
+                                <h5>Project Name</h5>
+                            </div>
+                       
+                            <div class="portfolio-img none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1">
+                                <img class="zoom fluently show-project" src="img/works/works-caregivers-1.jpg" alt="" projectdiv="box-2">
+                                <h5>Project Name</h5>
+                            </div>
+                            <div class="portfolio-img none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1">
+                                <img class="zoom fluently show-project" src="img/works/works-servant-1.jpg" alt="" projectdiv="box-2">
+                                <h5>Project Name</h5>
+                            </div>
+                            <div class="portfolio-img none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1">
+                                <img class="zoom fluently show-project" src="img/works/works-RP-1.jpg" alt="" projectdiv="box-2">
+                                <h5>Project Name</h5>
+                            </div>
                         </div>
-                        <div class="none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1 portfolio-img">
-                            <img src="img/portfolio.png" alt="">
-                            <h5>Project Name</h5>
-                        </div>
-                    
-                        <div class="none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1 portfolio-img">
-                            <img src="img/portfolio.png" alt="">
-                            <h5>Project Name</h5>
-                        </div>
-                        <div class="none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1 portfolio-img">
-                            <img src="img/portfolio.png" alt="">
-                            <h5>Project Name</h5>
-                        </div>
-                        <div class="none-margin-l col-md-4 col-sm-6 col-xs-11 col-xs-offset-1 portfolio-img">
-                            <img src="img/portfolio.png" alt="">
-                            <h5>Project Name</h5>
-                        </div>
-                    </div>
-
-                    <!--
+                       
+                 <!--
                     <a href="" class="porfolio-button w-b-btn">SEE ALL</a>
-                    
+
 -->
+                    
                 </div>
             </div>
         </div>
         <!--end of #portfolio-->
+                           
+        
+        
+        
+        
 
         <div id="showcase">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="row showcase-title">
-                        <div class="col-md-2">
+                    <div class="title">
                             <h1>Showcase</h1>
-                        </div>
+<!--
                         <div id="next" class="col-md-3 col-md-offset-7">
                             <h5>Next project</h5>
                             <h2 class="left">wizzair website</h2>
                             <img class="right" src="img/next.png" alt="" width="25px" height="20px">
                         </div>
+-->
                     </div>
 
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="img-wrapper">
-                                <img src="img/showcase.png" alt="">
+                                <img src="img/showcase.jpg" alt="">
                             </div>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <h2>2015 LaSoft Web & Mobile</h2>
-                            <p>LaSoft is a Web Development Agency that provides high quality services as</p>
+                            <h2>COMPUZZ DASHBOARD PROJECT</h2>
+                            <h3>description</h3>
+                            <p>LaSoft is a Web Development Agency that provides high quality services as Compuzz dashboard is a server application that connects brand product resellers,
+manufacture companies  and usual customers. The application gives you an ability to
+manage orders involving customers and  manufacture companies, create an image 
+collection separately for each customer, track time of employees, and start email 
+marketing campaigns.</p>
+<!--
                             <ul class="showcase-services">
                                 <li>Web Application Design and Development;</li>
                                 <li>Web Site Design and Development;</li>
@@ -278,25 +347,24 @@
                                 <li>Project Management;</li>
                                 <li>Cloud Deployment;</li>
                             </ul>
+-->
 
                             <h3>technologies</h3>
                             <ul class="technologies">
-                                <li>Frontend: AngularJS | </li>
-                                <li>Backbone.js | Marionette.Js | </li>
-                                <li>Require.js | Aura.js | jQuery.js </li>
-                                <li>Bootstrap.css | Materialize.css</li>
+                                <li>Front-end: JavaScript, Backbone.js, Marionette.js , Underscore.js, Require.js,  Aura.js,  Node.js</li>
+                                <li>Frameworks: Bootstrap.css,  Jquery</li>
+                                <li>Back-end: Java</li>
+                                <li>Source control: Github, Bitbucket</li>
+                                <li>Database: MySQL</li>
                             </ul>
-
+                            <h3>Customer Country</h3>
+                            <p>Belgium</p>
 
                             <a href="" class="showcase-button w-b-btn right">VIEW PROJECT</a>
                         </div>
 
                     </div>
-                </div>
-
-
-
-            </div>
+              
         </div>
         <!--end of #showcase-->
 
@@ -311,17 +379,27 @@
                             <div class="avatar">
                                 <img src="img/avatar.png" alt="">
                             </div>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisci ng elit. Phasel lus nec ex pellente, posuere erat non, dictum nisl. </p>
-                            <h2 class="name">Aaron Smith</h2>
-                            <h3>Businessman, Australia</h3>
+                            <p class="description">«LaSoft team are professional and easy to work with. Our web
+
+project was executed on time and on budget. We would gladly work
+
+with LaSoft again in the future».</p>
+                            <h2 class="name">Тim Driver</h2>
+                            <h3>CEO, RetirementJobs.com, Inc.</h3>
                         </div>
                         <div class="col-md-4 col-sm-4 testimonials-item">
                             <div class="avatar">
                                 <img src="img/avatar.png" alt="">
                             </div>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisci ng elit. Phasel lus nec ex pellente, posuere erat non, dictum nisl. </p>
-                            <h2 class="name">Aaron Smith</h2>
-                            <h3>Businessman, Australia</h3>
+                            <p class="description">«This is a
+
+young, energetic and yet very experienced team which
+
+demonstrated an extremely professional approach».</p>
+                            <h2 class="name">Matvey Smirnov</h2>
+                            <h3>Senior R&D Director,
+
+Global Productivity Platform at PepsiCo</h3>
                         </div>
                         <div class="col-md-4 col-sm-4 testimonials-item">
                             <div class="avatar">
@@ -424,7 +502,7 @@
         </div>
         <!--end of #team-->
 
-        <div id="form">
+        <div class="form">
             <h1 class="title">say hello</h1>
             <div class="line"></div>
             <div class="row">
@@ -432,13 +510,13 @@
                     <h3>Become our client and get the best services <br> and emotions with us!</h3>
                     <form action="">
                         <p>Tell us please what is your name?</p>
-                        <input type="text" required>
+                        <input type="text" name="name" required>
                         <p>Type your e-mail, please</p>
-                        <input type="text" required>
+                        <input type="text" name="email" required>
                         <p>Also your skype login</p>
-                        <input type="text">
+                        <input type="text" name="skype">
                         <p>Maybe you have some comment? </p>
-                        <textarea name="" id="" rows="5"></textarea>
+                        <textarea name="comment" id="" rows="5"></textarea>
                         <input type="submit" class="form-button" value="thanks for trust!">
                     </form>
                 </div>

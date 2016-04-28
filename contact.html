@@ -25,12 +25,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
 
 </head>
 
 <body>
     <div id="wrapper" class="container-fluid">
-        <header class="row clearfix">
+        <div class="header row clearfix">
             <div class="col-md-10 col-md-offset-1">
 
                 <div class="logo left">
@@ -49,11 +50,37 @@
                         <li><a href="works.html">Works</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#" class="button">Hire us</a></li>
-                    </ul>    
+                        <li><a href="#" class="show-popup" iddiv="box">Hire us</a></li>
+                    </ul> 
+                         
+                            <!---------   POPUP      --------->
+<div id="popup" opendiv=""></div>
+
+        <div id="box" class="popup-form" style="left:-225px; width:450px;">
+           <div class="form-reg">
+                   <a href="#" class="close-btn"><img src="img/close.png" alt=""></a>
+                    <h3>Become our client and get the best services <br> and emotions with us!</h3>
+                    <form action="">
+                        <p>Tell us please what is your name?</p>
+                        <input type="text" required>
+                        <p>Type your e-mail, please</p>
+                        <input type="text" required>
+                        <p>Also your skype login</p>
+                        <input type="text">
+                        <p>Maybe you have some comment? </p>
+                        <textarea name="" id="" rows="1"></textarea>
+                        <input type="submit" class="form-button" value="thanks for trust!">
+                    </form>
+          
+        </div>
+           
+        </div>
+  <!-------  END OF POPUP      ------->
+                               
+                                     
                           
                    </div>
-            </header>
+            </div>
 
         <div class="banner">
             <div class="img-wrapper">

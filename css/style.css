@@ -1,16 +1,14 @@
-.none-margin-l{
+.none-margin-l {
     margin-left: 0;
 }
 body {
     font-family: 'Geometron Pro Angular', sans-serif;
 }
-
 .container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
-
-header {
+.header {
     position: fixed;
     height: 80px;
     line-height: 80px;
@@ -21,27 +19,22 @@ header {
     z-index: 100;
     box-shadow: 0 6px 2px -2px #eeeeee;
 }
-
-.helper{
+.helper {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
 }
-
-.logo img{
+.logo img {
     vertical-align: middle;
     max-height: 45px;
 }
-
 .menu li {
     margin-right: 35px;
-    float: left;  
+    float: left;
 }
-
 .menu li:last-child {
     margin-right: 0;
 }
-
 .menu a {
     display: inline-block;
     height: 43px;
@@ -50,13 +43,10 @@ header {
     text-transform: uppercase;
     color: #303030;
 }
-
-.menu a:hover{
+.menu a:hover {
     color: #eab146;
     border-bottom: 2px solid #eab146;
 }
-
-
 #touch-menu {
     display: none;
     position: absolute;
@@ -64,41 +54,115 @@ header {
     right: 30px;
     height: 100px;
 }
-
-.fluently{
+.fluently {
     -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
-
-#touch-menu img{
+#touch-menu img {
     vertical-align: middle;
     max-height: 45px;
 }
-
 .zoom:hover {
-   transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -moz-transform: scale(1.2);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
 }
-
-.menu .button {
+.menu .show-popup {
+    /*    zoom:1;*/
     width: 120px;
     text-align: center;
     background-color: #eea924;
     border-radius: 5%;
 }
-
-.menu .button:hover{
+.menu .show-popup:hover {
     color: #fff;
     background-color: #ffbb15;
 }
 
+/*******************POPUP****************/
 
-/********HOME********/
+.popup,  .project-popup{
+    line-height: none;
+    display: none;
+    background-color: #000000;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.form-reg h3 {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #555555;
+}
+.form-reg p {
+    line-height: 30px;
+    margin: 5px 0;
+    font-size: 14px;
+    color: #707070;
+}
+
+.form-reg input[type="text"] {
+    width: 362px;
+    height: 37px;
+}
+.form-reg textarea {
+    width: 362px;
+}
+
+.form-reg .form-button{
+    margin-bottom: 30px;
+}
+
+.popup-form {
+    display: none;
+    line-height: 30px;
+    z-index: 9999;
+    position: fixed;
+    margin-left: 50%;
+    top: 25px;
+    text-align: center;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.popup-project{
+    display: none;
+    line-height: 30px;
+    z-index: 9999;
+    position: fixed;
+    margin-left: 25%;
+    top: 25px;
+    text-align: center;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.popup-img-wrapper{
+    width: 500px;
+    
+}
+
+.close-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/***********************HOME*********************/
 
 #home {
     color: #303030;
@@ -111,17 +175,14 @@ header {
     -o-background-size: cover;
     background-size: cover;
 }
-
 #home h1 {
     margin-bottom: 45px;
     text-transform: uppercase;
     font: 35px/35px Arial, sans-serif;
 }
-
 #home h2 {
     font: 20px/20px Arial, sans-serif;
 }
-
 
 /****************************ABOUT***************************/
 
@@ -131,65 +192,52 @@ header {
     font-size: 35px;
     text-transform: uppercase;
 }
-
 .line {
     margin: 30px auto 65px;
     height: 2px;
     width: 110px;
     background-color: #eab146;
 }
-
 .descr {
     margin-bottom: 60px;
     text-align: center;
     font-size: 18px;
     color: #5a585b;
 }
-
 .about-img {
     padding-left: 0;
     height: 290px;
     overflow: hidden;
 }
-
 #services .row {
     margin-bottom: 50px;
 }
-
 #services img {
     float: left;
 }
-
 #services h2 {
     margin: 3px 0 20px;
     text-transform: uppercase;
     font-size: 18px;
     color: #555555;
 }
-
 #services p {
     font-size: 16px;
     line-height: 24px;
     color: #707070;
 }
 
-
 /*********************portfolio*******************/
 
 #portfolio {
     background-color: #f9f9f9;
 }
-
 .filter {
     margin-bottom: 20px;
 }
-
-.filter li a {
+.filter a {
     height: 52px;
     float: left;
-}
-
-.filter a {
     text-transform: uppercase;
     color: #777777;
     font-size: 14px;
@@ -200,27 +248,27 @@ header {
     border-bottom: 2px solid #eea924;
 }
 
-#porfolio img {
-    height: 285px;
+.portfolio-img img {
+    width: 300px;
+    height: 428px;
 }
-
 .portfolio-img {
     padding-right: 15px;
     overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }
-
 #portfolio h5 {
     margin: 30px 0;
     color: #393939;
     font-size: 18px;
 }
-
 .porfolio-button {
     margin: 30px auto 80px;
     display: block;
     width: 106px;
 }
-
 .w-b-btn {
     display: block;
     text-decoration: none;
@@ -232,80 +280,65 @@ header {
     border-radius: 5%;
     color: #555555;
 }
-
 .w-b-btn:hover {
     border: 1px solid #000;
     color: #000;
 }
 
-
 /*************************SHOWCASE*******************/
 
 #showcase {
+    padding-top: 10px;
     color: #333333;
     background-color: #eea924;
     font: 'Geometron Pro Angular 700', sans-serif;
 }
 
-.showcase-title {
-    margin-top: 90px;
-    margin-bottom: 90px;
-}
-
 #showcase h1 {
     font-size: 35px;
+    margin-bottom: 70px;
 }
-
+/*
 #next {
     float: right;
 }
-
+*/
 #showcase h2 {
     font-size: 25px;
     text-transform: uppercase;
 }
-
 #showcase h3 {
-    margin: 50px 0 20px;
-    font-size: 14px;
+    margin: 30px 0 20px;
+    font-size: 20px;
     text-transform: uppercase;
 }
-
 #showcase p {
     margin: 25px 0 15px;
-    font-size: 14px;
+    font-size: 16px;
 }
-
 .showcase-services ul {
-    font-size: 14px;
+    font-size: 16px;
     list-style-image: url('../img/ul-ellipse.png');
 }
-
-.showcase-services li,
-.technologies li {
+.showcase-services li, .technologies li {
     margin-bottom: 10px;
 }
-
 #showcase .img-wrapper {
     width: 98%;
     height: 100%;
     overflow: hidden;
 }
-
 #showcase .img-wrapper img {
     width: 100%;
     height: 100%;
 }
-
 .technologies {
     text-decoration: none;
     font-size: 14px;
 }
-
 .showcase-button {
     width: 127px;
 }
-
 
 /*************************Testimonials*******************/
 
@@ -313,7 +346,6 @@ header {
     font-size: 16px;
     text-align: center;
 }
-
 .avatar {
     margin: 40px auto 70px;
     width: 75px;
@@ -321,78 +353,63 @@ header {
     border-radius: 50%;
     overflow: hidden;
 }
-
 .avatar img {
     width: 75px;
     height: 75px;
 }
-
 #testimonials .description {
     margin-bottom: 50px;
     line-height: 25px;
 }
-
 #testimonials .name {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
-
 #testim-buttons {
     margin: 50px 0 100px;
     text-align: center;
 }
-
 #testim-buttons .left-btn {
     margin-right: 12px;
 }
-
 
 /*************************philosofy*************************/
 
 #philosofy {
     background-color: #f9f9f9;
 }
-
 #philosofy img {
     width: 100%;
     height: 100%;
 }
-
 #philosofy .title {
     margin-top: 70px;
 }
-
 #philosofy ul {
     font-size: 14px;
     line-height: 24px;
     list-style-image: url('../img/ul-philosofy.png');
 }
-
 #philosofy li {
     margin-bottom: 10px;
 }
-
 #philosofy .info {
     padding-left: 60px;
     text-align: left;
 }
-
 
 /****************************clients*************************/
 
 #clients .title {
     margin-bottom: 65px;
 }
-
 .first-client {
     margin-right: 60px;
 }
-
-#clients .img-wrapper{
+#clients .img-wrapper {
     height: 30px;
     line-height: 60px;
 }
-
 
 /*****************************TEAM**********************/
 
@@ -407,16 +424,13 @@ header {
     -o-background-size: cover;
     background-size: cover;
 }
-
 #team .title {
     margin: 140px 0 40px;
 }
-
 #team h3 {
     font-size: 16px;
     line-height: 27px;
 }
-
 .team-btn {
     margin-top: 45px;
     margin-bottom: 90px;
@@ -424,39 +438,32 @@ header {
     border: 1px solid #fefefe;
 }
 
-
 /*******************************FORM*********************/
 
-#form .title {
+.form form .title {
     color: #eea924;
 }
-
-#form h3 {
+.form h3 {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
     color: #555555;
 }
-
-#form p {
+.form p {
     margin: 25px 0 5px;
     font-size: 14px;
     color: #707070;
 }
-
-form {
+.form form {
     margin-left: 40px;
 }
-
-input[type="text"] {
+.form input[type="text"] {
     width: 362px;
     height: 47px;
 }
-
-textarea {
+.form textarea {
     width: 362px;
 }
-
 .form-button {
     margin: 20px 0 100px;
     width: 362px;
@@ -466,11 +473,9 @@ textarea {
     border: 1px solid #eea924;
     border-radius: 3px;
 }
-
-.form-button:hover{
+.form-button:hover {
     background-color: #fcba39;
 }
-
 
 /************************FOOTER**************************/
 
@@ -479,39 +484,31 @@ textarea {
     background-color: #303030;
     color: #ffffff;
 }
-
 #footer .contact-us {
     font-size: 16px;
 }
-
 #footer .logo {
-    margin:40px 0 30px;
+    margin: 40px 0 30px;
 }
-
 #footer h1 {
     font-size: 33px;
     line-height: 43px;
 }
-
 .contact-us h3 {
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-
 .contact-us p {
     margin-bottom: 30px;
 }
-
 #footer .navigation, #footer .social {
     margin-top: 125px;
 }
-
 #footer h2 {
     margin-bottom: 28px;
     font-size: 18px;
     text-transform: uppercase;
 }
-
 .social-item {
     position: relative;
     margin-right: 14px;
@@ -522,20 +519,16 @@ textarea {
     background-color: #e0e0e0;
     border-radius: 5px;
 }
-
-.social-item:hover{
+.social-item:hover {
     background-color: #eea924;
 }
-
 .social-item img {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 35px;
     height: 35px;
-    
 }
-
 footer {
     padding: 10px 5px 10px 0;
     background-color: #131313;
@@ -543,47 +536,32 @@ footer {
     color: #ffffff;
 }
 
-
-
-
 /********************MEDIA*****************************/
-@media (max-width: 768px){
-    header{
+
+@media (max-width: 768px) {
+    header {
         background-color: #fff;
     }
-    .menu{
+    .menu {
         display: none;
         width: 100%;
         background-color: #e0e0e0;
         text-align: center;
     }
-    .menu li{
+    .menu li {
         float: none;
         margin-right: 0;
-         height: 45px;
-    }
-    .menu li a{
-        
         height: 45px;
     }
-    #touch-menu{
+    .menu li a {
+        height: 45px;
+    }
+    #touch-menu {
         display: block;
         text-align: right;
     }
-    .menu .button{
+    .menu .show-popup {
         width: 100%;
         border-radius: 0;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-

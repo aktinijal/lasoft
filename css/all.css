@@ -10,6 +10,7 @@ body{
     border: 1px solid #f1c75f;
 }
 
+
 .banner .img-wrapper{
     height: 350px;
     overflow: hidden;
@@ -58,7 +59,7 @@ form {
 
 
 /************************SERVICES**********************/
-h3{
+#what-we-do h3{
     text-transform: uppercase;
 }
 #what-we-do{

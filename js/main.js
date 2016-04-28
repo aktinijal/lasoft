@@ -1,4 +1,20 @@
 $(document).ready(function(){
+    
+    $('.form').submit(function() {
+        $.ajax({
+        type: "POST",
+        url: "mail.php",
+        data: $(this).serialize()    
+        }).done(function() {
+        alert("Thanks for trust! We`ll contact you.")
+        });
+        return false;
+    });
+    
+    
+    
+    
+    
     var touch = $('#touch-menu');
     var menu = $('.menu');
     
@@ -13,4 +29,8 @@ $(document).ready(function(){
             menu.removeAttr('style');
         }
     }); 
+    
+    
+    
+    
 });
