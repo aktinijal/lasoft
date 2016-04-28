@@ -17,16 +17,16 @@ $(document).ready(function() {
     
     
     $(".show-project").click(function() {
-        $('.project-popup').fadeIn(300);
+        $('.popup').fadeIn(300);
         var projectdiv = $(this).attr("projectdiv");
         $('#' + projectdiv).fadeIn(300);
-        $('.project-popup').attr('opendiv', projectdiv);
+        $('.popup').attr('opendiv', projectdiv);
         return false;
     });
 
-    $('.project-popup, .close-btn').click(function() {
-        var projectdiv = $(".project-popup").attr('opendiv');
-        $('.project-popup').fadeOut(300);
+    $('.popup, .close-btn').click(function() {
+        var projectdiv = $(".popup").attr('opendiv');
+        $('.popup').fadeOut(300);
         $('#' + projectdiv).fadeOut(300);
     });
 
