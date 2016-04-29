@@ -43,6 +43,9 @@ $(document).ready(function(){
         if(wid < 1005){
             $("#clients .img-wrapper").removeClass('none-margin-l');
         }
+         if(wid > 1005){
+            $("#clients .img-wrapper").addClass('none-margin-l');
+        }
     }); 
     
 
