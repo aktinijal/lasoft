@@ -31,6 +31,10 @@ $(document).ready(function(){
     }); 
     
     
+//    var height = $("#philosofy img").height();
+//    $('#philosofy').height(height);
+    
+    
     
     
 });
