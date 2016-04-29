@@ -221,8 +221,13 @@ body {
 }
 .about-img {
     padding-left: 0;
-    height: 290px;
+/*    height: 290px;*/
     overflow: hidden;
+}
+
+.about-img img{
+/*    width: 100%;*/
+    height: 290px;
 }
 
 /****************SERVICES******************************/
@@ -301,6 +306,9 @@ body {
     color: #333333;
     background-color: #eea924;
     font: 'Geometron Pro Angular 700', sans-serif;
+}
+#showcase .title{
+    margin-top: 70px;
 }
 
 #showcase h1 {
@@ -391,7 +399,10 @@ body {
     height: 100%;
 }
 #philosofy .title {
-    margin-top: 70px;
+    margin-top: 20px;
+}
+#philosofy .line{
+    margin-bottom: 50px;
 }
 #philosofy ul {
     font-size: 14px;
@@ -415,6 +426,7 @@ body {
 #clients .img-wrapper {
     height: 100px;
     line-height: 120px;
+    text-align: center;
 }
 
 /*****************************TEAM**********************/
@@ -554,6 +566,7 @@ footer {
         height: 200px;
     }
 }
+
 
 
 @media (max-width: 768px) {

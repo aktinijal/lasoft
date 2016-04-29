@@ -11,13 +11,18 @@ $(document).ready(function(){
         return false;
     });
     
-    
-    
-    
+    /////////HEADER////////  
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 300){
+    $('.header').addClass("sticky");
+    }
+    else{
+    $('.header').removeClass("sticky");
+    }
+    });  
     
     var touch = $('#touch-menu');
     var menu = $('.menu');
-    
     $(touch).on('click', function(e) {
         e.preventDefault();
         menu.slideToggle();
@@ -30,27 +35,17 @@ $(document).ready(function(){
         }
     }); 
     
-    $(window).scroll(function() {
-    if ($(this).scrollTop() > 300){
-    $('.header').addClass("sticky");
-    }
-    else{
-    $('.header').removeClass("sticky");
-    }
-    });
     
     
-//    var servicesItem = $('.servicses-item');
-//    $(window).resize(function(){
-//    var wid = $(window).width();
-//        if(wid < 640){
-//            servicesItem.removeClass('none-margin-l');
-//        }
-//    });
+    ///////CLIENTS//////////
+     $(window).resize(function(){
+    var wid = $(window).width();
+        if(wid < 1005){
+            $("#clients .img-wrapper").removeClass('none-margin-l');
+        }
+    }); 
     
-    
-//    var height = $("#philosofy img").height();
-//    $('#philosofy').height(height);
+
     
     
     
