@@ -24,11 +24,29 @@ $(document).ready(function(){
     });
     
     $(window).resize(function(){
-    var wid =$(window).width();
+    var wid = $(window).width();
         if(wid > 760 && menu.is(':hidden')){
             menu.removeAttr('style');
         }
     }); 
+    
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 300){
+    $('.header').addClass("sticky");
+    }
+    else{
+    $('.header').removeClass("sticky");
+    }
+    });
+    
+    
+//    var servicesItem = $('.servicses-item');
+//    $(window).resize(function(){
+//    var wid = $(window).width();
+//        if(wid < 640){
+//            servicesItem.removeClass('none-margin-l');
+//        }
+//    });
     
     
 //    var height = $("#philosofy img").height();

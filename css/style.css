@@ -10,13 +10,24 @@ body {
 }
 .header {
     position: fixed;
+/*    width: 100%;*/
     height: 80px;
     line-height: 80px;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.4);
     z-index: 100;
+    transition: all 1s ease;
+}
+.banner-slogan{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+}
+.sticky{
+    transition: all 1s ease;
+    background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 6px 2px -2px #eeeeee;
 }
 .helper {
@@ -158,19 +169,13 @@ body {
 .modal-body{
     padding: 0;
 }
-/*
-.modal-content{
-    width: 90%;
-}
-*/
-
 
 
 /***********************HOME*********************/
 
 #home {
     color: #303030;
-    height: 700px;
+    height: 800px;
     padding-top: 300px;
     text-align: left;
     background: #f0f0f0 url(../img/banner.jpg) no-repeat center bottom;
@@ -180,12 +185,18 @@ body {
     background-size: cover;
 }
 #home h1 {
-    margin-bottom: 45px;
+    margin-bottom: 10px;
+    text-align: center;
     text-transform: uppercase;
-    font: 35px/35px Arial, sans-serif;
+    font: 30px/30px 'Times New Roman', sans-serif;
 }
 #home h2 {
-    font: 20px/20px Arial, sans-serif;
+    text-align: center;
+    font: 22px/22px 'Times New Roman', sans-serif;
+    margin-bottom: 15px;
+}
+#home p{
+    font: 18px/18px 'Times New Roman', sans-serif;
 }
 
 /****************************ABOUT***************************/
@@ -214,7 +225,7 @@ body {
     overflow: hidden;
 }
 
-/****************SERVICES*////////////////
+/****************SERVICES******************************/
 
 
 
@@ -297,15 +308,16 @@ body {
     margin-bottom: 70px;
 }
 
-
+#showcase h2, #showcase h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
 #showcase h2 {
     font-size: 22px;
-    text-transform: uppercase;
 }
 #showcase h3 {
     margin: 20px 0 10px;
     font-size: 16px;
-    text-transform: uppercase;
 }
 #showcase p {
     margin: 15px 0 10px;
@@ -316,6 +328,7 @@ body {
     width: 98%;
     height: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 #showcase .img-wrapper img {
     width: 100%;
@@ -350,7 +363,8 @@ body {
     height: 75px;
 }
 #testimonials .description {
-    margin-bottom: 50px;
+    height: 120px;
+    margin-bottom: 30px;
     line-height: 25px;
 }
 #testimonials .name {
@@ -397,12 +411,10 @@ body {
 #clients .title {
     margin-bottom: 65px;
 }
-.first-client {
-    margin-right: 60px;
-}
+
 #clients .img-wrapper {
-    height: 30px;
-    line-height: 60px;
+    height: 100px;
+    line-height: 120px;
 }
 
 /*****************************TEAM**********************/
@@ -482,6 +494,7 @@ body {
 /************************FOOTER**************************/
 
 #footer {
+    padding-top: 50px;
     padding-bottom: 38px;
     background-color: #303030;
     color: #ffffff;
@@ -489,28 +502,12 @@ body {
 #footer .contact-us {
     font-size: 16px;
 }
-#footer .logo {
-    margin: 40px 0 30px;
-}
-#footer h1 {
-    font-size: 33px;
-    line-height: 43px;
-}
+
 .contact-us h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
-.contact-us p {
-    margin-bottom: 30px;
-}
-#footer .navigation, #footer .social {
-    margin-top: 125px;
-}
-#footer h2 {
-    margin-bottom: 28px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
+
 .social-item {
     position: relative;
     margin-right: 14px;
@@ -533,16 +530,35 @@ body {
 }
 footer {
     padding: 10px 5px 10px 0;
+    text-align: center;
     background-color: #131313;
     font-size: 10px;
     color: #ffffff;
 }
 
 /********************MEDIA*****************************/
+@media (min-width: 1390px) {
+    .form form{
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .form form{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1170px) {
+    #testimonials .description {
+        height: 200px;
+    }
+}
+
 
 @media (max-width: 768px) {
-    header {
-        background-color: #fff;
+    .header {
+        background-color: rgba(255, 255, 255, 1);
     }
     .menu {
         display: none;
@@ -570,4 +586,18 @@ footer {
     .title {
         margin-top: 60px;
     }
+    
+    
+    #testimonials .description {
+        height: 100px;
+    }
 }
+
+@media (max-width: 350px) {
+    #testimonials .description {
+        height: 150px;
+        margin-bottom: 10;
+    }
+}
+
+

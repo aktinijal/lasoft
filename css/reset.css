@@ -128,27 +128,35 @@ a:hover {
 
 /****************************FONTS****************************/
 @font-face {
-    font-family: 'Geometron Pro Angular';
-    src: url(fonts/Marius Mitran - GeometronProAngular-100.otf);
+    font-family: 'GeometronProAngular1';
+    src: url(fonts/GeometronProAngular1.otf);
 }
 
 @font-face {
-    font-family: 'Geometron Pro Angular';
-    src: url(fonts/Marius Mitran - GeometronProAngular-300.otf);
+    font-family: 'GeometronProAngular';
+    src: url(fonts/GeometronProAngular3.otf);
 }
 
 @font-face {
-    font-family: 'Geometron Pro Angular';
-    src: url(fonts/Marius Mitran - GeometronProAngular-500.otf);
+    font-family: 'GeometronProAngular5';
+    src: url(fonts/GeometronProAngular5.otf);
 }
 
 @font-face {
-    font-family: 'Geometron Pro Angular';
-    src: url(fonts/Marius Mitran - GeometronProAngular-700.otf);
+    font-family: 'GeometronProAngular7';
+    src: url(fonts/GeometronProAngular7.otf);
 }
 
 @font-face {
-    font-family: 'Geometron Pro Angular';
-    src: url(fonts/Marius Mitran - GeometronProAngular-900.otf);
+    font-family: 'GeometronProAngular9';
+    src: url(fonts/GeometronProAngular9.otf);
 }
 
+/******************************OTHER**********************/
+/*
+body::-webkit-scrollbar { width: 0; }
+
+body { -ms-overflow-style: none; }
+
+body { overflow: -moz-scrollbars-none; }
+*/
