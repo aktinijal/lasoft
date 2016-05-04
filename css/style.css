@@ -619,7 +619,7 @@ footer {
     .about-img{
         text-align: center;
     }
-    #about img{
+    #about .about-img img{
         width: 450px;
     }
     
