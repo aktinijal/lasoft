@@ -20,7 +20,7 @@ body{
 .banner img{
     width: 100%;
 }
-
+/******************ABOUT*************************/
 
 #content{
     color: #303030;
@@ -42,6 +42,10 @@ body{
 
 #content .even{
     background-color: #fafafa;
+}
+
+.text{
+    opacity: 0.8;
 }
 
 

@@ -150,7 +150,7 @@ body {
 /*    font: 18px/18px 'Times New Roman', sans-serif;*/
 }
 
-/****************************ABOUT***************************/
+/**************************ABOUT*********************/
 
 .title {
     margin-top: 95px;
@@ -177,17 +177,11 @@ body {
 }
 
 .about-img img{
-/*    width: 100%;*/
     height: 290px;
 }
 
 /****************SERVICES******************************/
 
-
-
-#services .row {
-    margin-bottom: 50px;
-}
 .servicses-item{
     height: 250px;
 }
@@ -210,7 +204,7 @@ body {
 /*********************portfolio*******************/
 
 #portfolio {
-    background-color: #f9f9f9;
+/*    background-color: #f9f9f9;*/
 }
 
 .portfolio-img img {
