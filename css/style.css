@@ -344,7 +344,7 @@ body {
 #philosofy {
     margin-bottom: -6px;
 /*    height: 371px;*/
-    background-color: #e8e8e8;
+    background-color: #ededed;
 }
 #philosofy img {
     width: 100%;
@@ -582,15 +582,10 @@ footer {
 
 /********************MEDIA*****************************/
 @media (min-width: 1390px) {
-    .form form{
-        margin-left: 50px;
-    }
 }
 
 @media (min-width: 1600px) {
-    .form form{
-        margin-left: 100px;
-    }
+
 }
 
 @media (max-width: 1170px) {
