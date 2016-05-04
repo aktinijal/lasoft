@@ -344,7 +344,7 @@ body {
 #philosofy {
     margin-bottom: -6px;
 /*    height: 371px;*/
-    background-color: #f9f9f9;
+    background-color: #e8e8e8;
 }
 #philosofy img {
     width: 100%;
@@ -465,6 +465,7 @@ body {
     height: 38px;
     background-color: #eea924;
     color: #ffffff;
+    text-transform: uppercase;
     border: 1px solid #eea924;
     border-radius: 3px;
 }
@@ -518,13 +519,17 @@ footer {
 }
 
 /****************************FORM**************************/
+.bootstrap-form{
+    width: 380px;
+    margin: 0 auto;
+}
 .bootstrap-form .title {
     color: #eea924;
 }
 .bootstrap-form h3 {
     font-size: 16px;
     line-height: 22px;
-    text-align: left;
+/*    text-align: left;*/
     color: #555555;
 }
 .bootstrap-form input[type="text"], .bootstrap-form input[type="email"] {
