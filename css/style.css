@@ -427,6 +427,7 @@ body {
 
 /*******************************FORM*********************/
 
+/*
 .form form .title {
     color: #eea924;
 }
@@ -441,11 +442,9 @@ body {
     font-size: 14px;
     color: #707070;
 }
-/*
 .form form {
     margin-right: 40px;
 }
-*/
 .form input[type="text"] {
     padding: 5px;
     width: 362px;
@@ -468,10 +467,12 @@ body {
     text-transform: uppercase;
     border: 1px solid #eea924;
     border-radius: 3px;
+    letter-spacing: 150;
 }
 .form-button:hover {
     background-color: #fcba39;
 }
+*/
 
 /************************FOOTER**************************/
 
@@ -554,6 +555,8 @@ footer {
     height: 38px;
     background-color: #eea924;
     color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
     border: 1px solid #eea924;
     border-radius: 3px;
 }
@@ -561,20 +564,6 @@ footer {
     background-color: #fcba39;
     border: 1px solid #fcba39;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
