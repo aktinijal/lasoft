@@ -21,7 +21,8 @@ body {
     transition: all 1s ease;
 }
 .banner-slogan{
-    padding: 20px;
+    color: #444444;
+    padding: 30px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
 }
@@ -52,7 +53,7 @@ body {
     line-height: 43px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #303030;
+    color: #444444;
 }
 .menu a:hover {
     color: #eab146;
@@ -82,79 +83,17 @@ body {
     -o-transform: scale(1.1);
     -moz-transform: scale(1.1);
 }
-.menu .show-popup {
+.menu .button-hire {
     width: 120px;
     text-align: center;
     background-color: #eea924;
     border-radius: 5%;
 }
-.menu .show-popup:hover {
+.menu .button-hire:hover {
     color: #fff;
     background-color: #ffbb15;
 }
 
-/*******************FORM-POPUP****************/
-
-.popup{
-    line-height: none;
-    display: none;
-    background-color: #000000;
-    opacity: 0.7;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-.form-reg h3 {
-    margin-top: 30px;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    color: #555555;
-}
-.form-reg p {
-    line-height: 30px;
-    margin: 5px 0;
-    font-size: 14px;
-    color: #707070;
-}
-
-.form-reg input[type="text"] {
-    width: 362px;
-    height: 37px;
-}
-.form-reg textarea {
-    width: 362px;
-}
-
-.form-reg .form-button{
-    margin-bottom: 30px;
-}
-
-.popup-form {
-    display: none;
-    line-height: 30px;
-    z-index: 101;
-    position: fixed;
-    margin-left: 50%;
-    top: 25px;
-    text-align: center;
-    padding: 5px;
-    background-color: #ffffff;
-}
-
-
-.close-btn{
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 102;
-}
 /*******************PORTFOLIO-POPUP****************/
 
 .modal-dialog{
@@ -169,12 +108,21 @@ body {
 .modal-body{
     padding: 0;
 }
+/**********************FORM-POPUP***************/
 
+#myModal-form .modal-dialog{
+    width: 33%;
+    text-align: left;
+}
+
+#myModal-form .modal-header{
+   
+}
 
 /***********************HOME*********************/
 
 #home {
-    color: #303030;
+    color: #444444;
     height: 800px;
     padding-top: 300px;
     text-align: left;
@@ -185,18 +133,21 @@ body {
     background-size: cover;
 }
 #home h1 {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 15px;
+    text-align: left;
     text-transform: uppercase;
-    font: 30px/30px 'Times New Roman', sans-serif;
+    font-size: 30px;
+/*    font: 30px/30px 'Times New Roman', sans-serif;*/
 }
 #home h2 {
-    text-align: center;
-    font: 22px/22px 'Times New Roman', sans-serif;
-    margin-bottom: 15px;
+    text-align: left;
+    font-size: 20px;
+/*    font: 22px/22px 'Times New Roman', sans-serif;*/
+    margin-bottom: 10px;
 }
 #home p{
-    font: 18px/18px 'Times New Roman', sans-serif;
+    font-size: 16px;
+/*    font: 18px/18px 'Times New Roman', sans-serif;*/
 }
 
 /****************************ABOUT***************************/
@@ -278,26 +229,14 @@ body {
     color: #393939;
     font-size: 18px;
 }
+/*
 .porfolio-button {
     margin: 30px auto 80px;
     display: block;
     width: 106px;
 }
-.w-b-btn {
-    display: block;
-    text-decoration: none;
-    height: 38px;
-    border: 1px solid #555555;
-    text-align: center;
-    font-size: 12px;
-    line-height: 38px;
-    border-radius: 5%;
-    color: #555555;
-}
-.w-b-btn:hover {
-    border: 1px solid #000;
-    color: #000;
-}
+*/
+
 
 /*************************SHOWCASE*******************/
 
@@ -347,12 +286,30 @@ body {
     font-size: 14px;
 }
 .showcase-button {
+    text-decoration: none;
+    margin: 30px auto 80px;
+    display: block;
+    width: 106px;
+    height: 38px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 38px;
+    border-radius: 5%;
+    color: #303030;
+    border: 1px solid #303030;
     margin-right: 20px;
     width: 127px;
+    background-color: #eea924;
+}
+
+.showcase-button:hover {
+    color: #fff;
+    background-color: #ffbb15;
 }
 
 /*************************Testimonials*******************/
 #testimonials{
+    background-color: #fff;
     padding-bottom: 100px;
 }
 .testimonials-item {
@@ -378,7 +335,14 @@ body {
 #testimonials .name {
     text-transform: uppercase;
     margin-bottom: 15px;
+    font-weight: bold;
 }
+#testimonials h3{
+    font-size: 12px;
+    line-height: 19px;
+    opacity: 0.8;
+}
+
 #testim-buttons {
     margin: 50px 0 100px;
     text-align: center;
@@ -398,9 +362,11 @@ body {
     width: 100%;
     height: 100%;
 }
+/*
 #philosofy .title {
     margin-top: 20px;
 }
+*/
 #philosofy .line{
     margin-bottom: 50px;
 }
@@ -418,7 +384,9 @@ body {
 }
 
 /****************************clients*************************/
-
+#clients{
+    background-color: #fff;
+}
 #clients .title {
     margin-bottom: 65px;
 }
@@ -450,10 +418,23 @@ body {
     line-height: 27px;
 }
 .team-btn {
-    margin-top: 45px;
-    margin-bottom: 90px;
-    color: #fefefe;
-    border: 1px solid #fefefe;
+    text-decoration: none;
+    margin: 30px auto 80px;
+    display: block;
+    width: 106px;
+    height: 38px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 38px;
+    border-radius: 5%;
+}
+
+.team-btn:hover {
+    color: #303030;
+    border: 1px solid #303030;
+    background-color: rgb(255, 187, 21, 0.7);
 }
 
 /*******************************FORM*********************/
@@ -548,6 +529,64 @@ footer {
     color: #ffffff;
 }
 
+/****************************FORM**************************/
+.bootstrap-form .title {
+    color: #eea924;
+}
+.bootstrap-form h3 {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    color: #555555;
+}
+.bootstrap-form input[type="text"], .bootstrap-form input[type="email"] {
+    padding: 5px;
+    width: 362px;
+    height: 47px;
+    border-radius: 0;
+    
+}
+.bootstrap-form textarea {
+    width: 362px;
+}
+
+.bootstrap-form label {
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #707070;
+}
+.form-button {
+    margin: 20px 0 100px;
+    width: 362px;
+    height: 38px;
+    background-color: #eea924;
+    color: #ffffff;
+    border: 1px solid #eea924;
+    border-radius: 3px;
+}
+.form-button:hover {
+    background-color: #fcba39;
+    border: 1px solid #fcba39;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /********************MEDIA*****************************/
 @media (min-width: 1390px) {
     .form form{
@@ -591,7 +630,7 @@ footer {
         display: block;
         text-align: right;
     }
-    .menu .show-popup {
+    .button-hire {
         width: 100%;
         border-radius: 0;
     }

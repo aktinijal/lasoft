@@ -49,14 +49,13 @@ body{
 #contact{
     color: #707070;
 }
-form {
-    margin-left: 0;
+#contact .contacts h3{
+    text-transform: uppercase;
+    margin: 0 0 5px 0; 
 }
-.form h3{
-    margin-bottom: 35px;
-    color: #555555;
+#contact p{
+    margin: 0 0 10px 0; 
 }
-
 
 /************************SERVICES**********************/
 #what-we-do h3{

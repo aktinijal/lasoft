@@ -25,7 +25,6 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/popup.js"></script>
 
 </head>
 
@@ -40,7 +39,6 @@
                 </div>
 
                 <a href="#" id="touch-menu" class="zoom fluently">
-                    <span class="helper">
                     <img src="img/menu.png" alt="" height="43px;">
                     </a>
                    
@@ -50,37 +48,55 @@
                         <li><a href="works.html">Works</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="#" class="show-popup" iddiv="box">Hire us</a></li>
-                    </ul>    
-                        
-                          <!---------   POPUP      --------->
-<div class="popup" opendiv=""></div>
-
-        <div id="box" class="popup-form" style="left:-225px; width:450px;">
-           <div class="form-reg">
-                   <a href="#" class="close-btn"><img src="img/close.png" alt=""></a>
-                    <h3>Become our client and get the best services <br> and emotions with us!</h3>
-                     <form action="">
-                        <p>Tell us please what is your name?</p>
-                        <input type="text" name="name" required>
-                        <p>Type your e-mail, please</p>
-                        <input type="text" name="email" required>
-                        <p>Also your skype login</p>
-                        <input type="text" name="skype">
-                        <p>Maybe you have some comment? </p>
-                        <textarea name="comment" id="" rows="1"></textarea>
-                        <input type="submit" class="form-button" value="thanks for trust!">
-                    </form>
-          
-        </div>
-           
-        </div>
-  <!-------  END OF POPUP      ------->
-                                               
+                        <li><a href="#" class="button-hire" data-toggle="modal" data-target="#myModal-form">Hire us</a></li>
+                    </ul>                                             
                    </div>
             </div>
 
-
+<!--                FORM_SHOWCASE-->
+              <div class="modal fade" id="myModal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<!--        <h4 class="modal-title" id="myModalLabel">Say Hello</h4>-->
+      </div>
+      <div class="modal-body">
+       
+       <div class="row">
+            <div class="col-md-10 col-md-offset-1"> 
+        <form role="form" class="bootstrap-form">
+                <h3>Become our client and get the best services and <br> emotions with us!</h3>       
+        <div class="form-group">
+          <label for="text">Tell us please what is your name?</label>
+          <input name="name" type="text" class="form-control" placeholder="Name">
+         </div>
+         
+         <div class="form-group">
+          <label for="email">Type your e-mail, please</label>
+          <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+         </div>
+         <div class="form-group">
+          <label for="text">Also your skype login</label>
+          <input name="skype" type="text" class="form-control" placeholder="Skype">
+         </div>
+         <div class="form-group">
+          <label for="">Maybe you have some comment?</label>
+          <textarea name="comment" class="form-control" rows="5"></textarea>
+         </div>
+         <button type="submit" class="btn btn-success form-button">thanks for trust!</button>
+        </form>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>  
+      
+      
+      
+      
        
 
 <div id="portfolio">
@@ -217,26 +233,32 @@
 
 
 
-<div class="form">
-            <h1 class="title">say hello</h1>
-                 <div class="line"></div>
-                 <div class="row">
-                 <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-4 col-xs-8 col-xs-offset-1">
-                 <h3>Become our client and get the best services <br> and emotions with us!</h3>
-                  <form action="">
-                        <p>Tell us please what is your name?</p>
-                        <input type="text" name="name" required>
-                        <p>Type your e-mail, please</p>
-                        <input type="text" name="email" required>
-                        <p>Also your skype login</p>
-                        <input type="text" name="skype">
-                        <p>Maybe you have some comment? </p>
-                        <textarea name="comment" id="" rows="5"></textarea>
-                        <input type="submit" class="form-button" value="thanks for trust!">
-                    </form>
-                 </div>
-                 </div>           
-        </div><!--end of #form-->
+<form role="form" class="bootstrap-form">
+         <h1 class="title">say hello</h1>
+                <div class="line"></div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-4 col-xs-8 col-xs-offset-1"> 
+                <h3>Become our client and get the best services and <br> emotions with us!</h3>       
+        <div class="form-group">
+          <label for="text">Tell us please what is your name?</label>
+          <input name="name" type="text" class="form-control" placeholder="Name">
+         </div>
+         <div class="form-group">
+          <label for="email">Type your e-mail, please</label>
+          <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+         </div>
+         <div class="form-group">
+          <label for="text">Also your skype login</label>
+          <input name="skype" type="text" class="form-control" placeholder="Skype">
+         </div>
+         <div class="form-group">
+          <label for="">Maybe you have some comment?</label>
+          <textarea name="comment" class="form-control" rows="5"></textarea>
+         </div>
+         <button type="submit" class="btn btn-success form-button">thanks for trust!</button>
+         </div>
+                </div>
+        </form><!--end of #form-->
 
 
     
