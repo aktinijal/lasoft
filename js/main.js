@@ -1,26 +1,26 @@
 $(document).ready(function(){
     
-    $('.form').submit(function() {
-        $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: $(this).serialize()    
-        }).done(function() {
-        alert("Thanks for trust! We`ll contact you.")
-        });
-        return false;
-    });
-    
-    $('.form-button').submit(function() {
-        $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: $(this).serialize()    
-        }).done(function() {
-        alert("Thanks for trust! We`ll contact you.")
-        });
-        return false;
-    });
+//    $('.form').submit(function() {
+//        $.ajax({
+//        type: "POST",
+//        url: "mail.php",
+//        data: $(this).serialize()    
+//        }).done(function() {
+//        alert("Thanks for trust! We`ll contact you.")
+//        });
+//        return false;
+//    });
+//    
+//    $('.form-button').submit(function() {
+//        $.ajax({
+//        type: "POST",
+//        url: "mail.php",
+//        data: $(this).serialize()    
+//        }).done(function() {
+//        alert("Thanks for trust! We`ll contact you.")
+//        });
+//        return false;
+//    });
     
     /////////HEADER////////  
     $(window).scroll(function() {
