@@ -22,6 +22,28 @@ $(document).ready(function(){
 //        return false;
 //    });
     
+    
+//      $(".menu a").click(function(){
+//        if($(this).hasClass("active")){
+//            $(".active").removeClass("active");
+//            $("#info-content").hide();
+//        } 
+//        else {
+//            var infoContent=$(this).find(".info-open").html();
+//            $(".active").removeClass("active");
+//            $(this).addClass("active");
+//            $("#info-content").html(infoContent).show();
+//        }       
+//    })
+      
+//         $(".menu a").click(function(){
+////            $(".active").removeClass("active");
+//            $(this).addClass("active");
+//        }); 
+      
+    
+    
+    
     /////////HEADER////////  
     $(window).scroll(function() {
     if ($(this).scrollTop() > 300){
@@ -51,6 +73,18 @@ $(document).ready(function(){
     ///////CLIENTS//////////
      $(window).resize(function(){
     var wid = $(window).width();
+        if(wid < 1080){
+            $(".footer-item").addClass('none-margin-l');
+        }
+         if(wid > 1080){
+            $(".footer-item").removeClass('none-margin-l');
+        }
+    }); 
+    
+    
+    ////////////FOOTER
+     $(window).resize(function(){
+    var wid = $(window).width();
         if(wid < 1005){
             $("#clients .img-wrapper").removeClass('none-margin-l');
         }
@@ -58,6 +92,25 @@ $(document).ready(function(){
             $("#clients .img-wrapper").addClass('none-margin-l');
         }
     }); 
+    
+    ////////////UP
+    $('#scrollup img').mouseover( function(){
+		$( this ).animate({opacity: 0.7},100);
+	}).mouseout( function(){
+		$( this ).animate({opacity: 1},100);
+	}).click( function(){
+		window.scroll(0 ,0); 
+		return false;
+	});
+
+	$(window).scroll(function(){
+		if ( $(document).scrollTop() > 0 ) {
+			$('#scrollup').fadeIn('fast');
+		} else {
+			$('#scrollup').fadeOut('fast');
+		}
+	});
+    
     
 
     /////////////MAP
