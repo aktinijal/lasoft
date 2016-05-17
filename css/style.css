@@ -5,6 +5,9 @@
 .none-margin-l {
     margin-left: 0;
 }
+.close{
+  outline:none;
+}
 body {
     font-family: 'Geometron Pro Angular', sans-serif;
 }
@@ -61,7 +64,7 @@ body {
 }
 .menu .active{
     color: #eab146;
-    border-bottom: 2px solid #eab146; 
+    border-bottom: 2px solid #eab146;
 }
 .menu a:hover {
     color: #eab146;
@@ -196,7 +199,7 @@ body {
 /****************SERVICES******************************/
 
 .servicses-item{
-    height: 300px;
+    height: 325px;
 
 }
 
@@ -434,7 +437,7 @@ body {
 }
 
 .team-btn:hover,
-.team-btn:focus, 
+.team-btn:focus,
 .team-btn:active{
     color: #303030;
     border: 1px solid #303030;
@@ -461,7 +464,7 @@ body {
 
 /*
 .footer-logo {
-    
+
 }
 .footer-logo .logo{
     width:130px;
@@ -499,7 +502,7 @@ footer {
 
 /****************************FORM**************************/
 .bootstrap-form{
-    width: 380px;
+    width: 362px;
     margin: 0 auto;
 }
 .bootstrap-form .title {
@@ -516,7 +519,7 @@ footer {
     width: 362px;
     height: 47px;
     border-radius: 0;
-    
+
 }
 .bootstrap-form textarea {
     width: 362px;
@@ -554,10 +557,10 @@ footer {
 
 /*****************************UP**************************/
 #scrollup{
-position: fixed; 
-right: 15px; 
-bottom: 15px; 
-display: none; 
+position: fixed;
+right: 15px;
+bottom: 15px;
+display: none;
 cursor: pointer;
 }
 
@@ -602,7 +605,7 @@ cursor: pointer;
         width: 100%;
         border-radius: 0;
     }
-    
+
 }
 
 
@@ -610,42 +613,62 @@ cursor: pointer;
     .title {
         margin-top: 100px;
     }
-    
+
     .about-img{
         text-align: center;
     }
     #about .about-img img{
         width: 450px;
     }
-    
+
     #testimonials .description {
-        height: 130px;
+        height: 200px;
     }
-    
+
     #showcase .showcase-text{
         margin-top: 50px;
     }
-    
+
     .footer-item{
         margin-bottom: 25px;
     }
-    
-    
-    /**********SRVICES.html*******/
+
+
+    /***SRVICES.html***/
     #what-we-do{
     margin-top: 80px;
     }
 }
 
 @media (max-width: 575px) {
-    
+    #about .about-img img{
+        width: 400px;
+    }
+
     #clients .clients-mature img{
-        width: 280px;
+        width: 260px;
+    }
+
+    .bootstrap-form{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .bootstrap-form input[type="text"],
+    .bootstrap-form input[type="email"],
+    .bootstrap-form textarea,
+    .form-button {
+        width: 300px;
+        height: 35px;
+    }
+    .form-button {
+        letter-spacing: 0.25em;
     }
 }
 
 @media (max-width: 480px) {
-    
+    #about .about-img img{
+        width: 350px;
+    }
     .servicses-item{
         height: 330px;
         margin-bottom: 10px;
@@ -653,13 +676,31 @@ cursor: pointer;
 }
 
 @media (max-width: 390px) {
+    #about .about-img img{
+        width: 320px;
+    }
     .servicses-item{
         height: 350px;
         margin-bottom: 10px;
-    }    
-    
+    }
+
     #team{
         height: 530px;
+    }
+
+    .bootstrap-form{
+        width: 270px;
+        margin: 0 auto;
+    }
+    .bootstrap-form input[type="text"],
+    .bootstrap-form input[type="email"],
+    .bootstrap-form textarea,
+    .form-button {
+        width: 270px;
+        height: 35px;
+    }
+    .form-button {
+        letter-spacing: 0.25em;
     }
 }
 
@@ -672,33 +713,21 @@ cursor: pointer;
     padding-right: 0;
 }
     #about .about-img img {
-    width: 300px;
+    width: 280px;
     }
     .about-img img {
         height: 260px;
     }
-    
-    .servicses-item{
-        height: 500px;
-        margin-bottom: 10px;
-    }   
-    
-    .bootstrap-form{
-    width: 300px;
-}
 
-.bootstrap-form input[type="text"], 
-.bootstrap-form input[type="email"], 
-.bootstrap-form textarea,
-.form-button {
-    width: 260px;
-    height: 38px;
-}
-.form-button {
-    letter-spacing: 0.25em;
-}
-    
-    
+    .servicses-item{
+        height: 450px;
+        margin-bottom: 10px;
+    }
+
+    #clients .clients-mature img {
+        width: 210px;
+    }
+
 }
 
 
@@ -708,5 +737,3 @@ cursor: pointer;
         margin-bottom: 10;
     }
 }
-
-
