@@ -14,13 +14,14 @@ body{
 
 
 .banner .img-wrapper{
-    height: 450px;
+    height: 100%;
     overflow: hidden;
     text-align: center;
 }
 
 .banner img{
     width: 100%;
+    margin-top: 80px;
 }
 /******************ABOUT*************************/
 
@@ -42,7 +43,7 @@ body{
 
 #content .odd, #content .even{
    padding-top: 40px;
-   padding-bottom: 30px;   
+   padding-bottom: 30px;
 }
 
 #content .even{
@@ -64,13 +65,14 @@ body{
 }
 #contact .contacts h3{
     text-transform: uppercase;
-    margin: 0 0 10px 0; 
+    margin: 0 0 10px 0;
     font-weight: bold;
 }
 #contact p{
-    margin: 0 0 30px 0; 
+    margin: 0 0 30px 0;
     opacity: 0.7;
 }
+
 
 /************************SERVICES**********************/
 #what-we-do h3{
@@ -153,13 +155,38 @@ body{
 
 
 
+/*************************MEDIA*************************/
+@media (max-width: 992px){
+    #what-we-do .content-1, #what-we-do .content-2{
+        padding: 20px;
+    }
 
+    #content .img-1{
+        width: 240px;
+        height: auto;
+    }
+    .contact-wrapper{
+        width: 200px;
+        margin: 0 auto 25px;
+        text-align: center;
+    }
 
+}
 
+@media (max-width: 768px){
+  #content .line{
+      margin-bottom: 5px;
+  }
+   #content .img-wrapper {
+        margin-top: 10;
+        margin-bottom: 20px;
+    }
+}
 
+@media (max-width: 400px){
+    #content .img-1{
+        width: 200px;
+        height: auto;
+    }
 
-
-
-
-
-
+}
