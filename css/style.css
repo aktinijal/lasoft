@@ -661,10 +661,6 @@ cursor: pointer;
     .footer-item{
         margin-bottom: 25px;
     }
-
-
-
-
 }
 
 @media (max-width: 575px) {
@@ -685,7 +681,9 @@ cursor: pointer;
         margin-bottom: 10px;
     }
 
+}
 
+@media (max-width: 575px) {
     #about .about-img img{
         width: 400px;
     }
@@ -721,6 +719,7 @@ cursor: pointer;
 }
 
 @media (max-width: 390px) {
+    
   #myModal-form .modal-dialog{
       width: 300px;
   }
@@ -732,9 +731,6 @@ cursor: pointer;
       margin-bottom: 17px;
       font-size: 22px;
   }
-  /*#home h2, #home li{
-    font-size: 12px;
-  }*/
 
     #about .about-img img{
         width: 320px;
