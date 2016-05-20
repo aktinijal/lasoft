@@ -1,3 +1,30 @@
+/****************************FONTS****************************/
+@font-face {
+    font-family: 'GeometronProAngular1';
+    src: url(fonts/GeometronProAngular1.otf);
+}
+
+@font-face {
+    font-family: 'GeometronProAngular3';
+    src: url(fonts/GeometronProAngular3.otf);
+}
+
+@font-face {
+    font-family: 'GeometronProAngular5';
+    src: url(fonts/GeometronProAngular5.otf);
+}
+
+@font-face {
+    font-family: 'GeometronProAngular7';
+    src: url(fonts/GeometronProAngular7.otf);
+}
+
+@font-face {
+    font-family: 'GeometronProAngular9';
+    src: url(fonts/GeometronProAngular9.otf);
+}
+
+/****************************HEADER***********************/
 .row{
     margin-left: 0;
     margin-right: 0;
@@ -11,7 +38,7 @@
 }
 
 body {
-    font-family: 'Geometron Pro Angular', sans-serif;
+    font-family: 'Geometron Pro Angular3', sans-serif;
 }
 .container-fluid {
     padding-left: 0;
@@ -106,7 +133,6 @@ body {
 }
 
 /*******************PORTFOLIO-POPUP****************/
-
 .modal-dialog{
     width: 90%;
     text-align: center;
@@ -120,7 +146,6 @@ body {
     padding: 0;
 }
 /**********************FORM-POPUP***************/
-
 #myModal-form .modal-dialog{
     width: 450px;
     margin: 0 auto;
@@ -143,7 +168,6 @@ body {
 }
 
 /***********************HOME*********************/
-
 #home {
     position: relative;
     width: 100%;
@@ -187,7 +211,6 @@ body {
 }
 
 /**************************ABOUT*********************/
-
 .title {
     margin-top: 95px;
     text-align: center;
@@ -243,10 +266,8 @@ body {
 }
 
 /****************SERVICES******************************/
-
 .servicses-item{
     height: 325px;
-
 }
 
 #services img {
@@ -281,22 +302,13 @@ body {
     color: #393939;
     font-size: 18px;
 }
-/*
-.porfolio-button {
-    margin: 30px auto 80px;
-    display: block;
-    width: 106px;
-}
-*/
-
 
 /*************************SHOWCASE*******************/
-
 #showcase {
     padding-top: 10px;
     color: #333333;
     background-color: #eea924;
-    font: 'Geometron Pro Angular 700', sans-serif;
+    font: 'Geometron Pro Angular7', sans-serif;
 }
 #showcase .title{
     margin-top: 70px;
@@ -403,7 +415,6 @@ body {
 }
 
 /*************************philosofy*************************/
-
 #philosofy {
     margin-bottom: -6px;
 /*    height: 371px;*/
@@ -445,7 +456,6 @@ body {
 }
 
 /*****************************TEAM**********************/
-
 #team {
     margin-top: 100px;
     text-align: center;
@@ -485,7 +495,6 @@ body {
     border: 1px solid #303030;
     background-color: rgb(255, 187, 21, 0.7);
 }
-
 
 /************************FOOTER**************************/
 
@@ -580,7 +589,6 @@ footer {
     border: 1px solid #fcba39;
 }
 
-
 /*****************************UP**************************/
 #scrollup{
 position: fixed;
@@ -590,15 +598,7 @@ display: none;
 cursor: pointer;
 }
 
-
 /********************MEDIA*****************************/
-@media (min-width: 1390px) {
-}
-
-@media (min-width: 1600px) {
-
-}
-
 @media (max-width: 1170px) {
     #testimonials .description {
         height: 200px;
@@ -634,7 +634,6 @@ cursor: pointer;
         width: 100%;
         border-radius: 0;
     }
-
 }
 
 
@@ -761,8 +760,6 @@ cursor: pointer;
 }
 
 
-
-
 @media (max-width: 360px) {
     #wrapper .row{
     padding-left: 0;
@@ -783,9 +780,7 @@ cursor: pointer;
     #clients .clients-mature img {
         width: 210px;
     }
-
 }
-
 
 @media (max-width: 350px) {
     #testimonials .description {
