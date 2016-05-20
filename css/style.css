@@ -101,7 +101,7 @@ body {
     color: #fff;
     background-color: #ffbb15;
 }
-.menu .button-hire:focus {
+.menu .button-hire:focus, #team .team-btn:focus {
     outline: none;
 }
 
@@ -127,13 +127,18 @@ body {
     text-align: left;
 }
 
-#myModal-form h3{
-    margin-top: 15px;
-}
 .modal-header{
+    color: #eea924;
+    font-weight: bold;
+    text-align: center;
     border-bottom: none;
 }
+.modal-header .line{
+  margin: 15px auto 20px;
+  width: 100px;
+}
 .close{
+  font-size: 28px;
   outline:none;
 }
 
@@ -601,6 +606,9 @@ cursor: pointer;
 }
 
 @media (max-width: 800px){
+    #myModal-form .modal-dialog{
+        width: 500px;
+    }
     .header {
         background-color: rgba(255, 255, 255, 1);
     }
@@ -632,7 +640,7 @@ cursor: pointer;
 
 @media (max-width: 768px) {
     .title {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .about-img{
@@ -655,11 +663,14 @@ cursor: pointer;
     }
 
 
-    
+
 
 }
 
 @media (max-width: 575px) {
+    #myModal-form .modal-dialog{
+        width: 350px;
+    }
     #home {
         height: 500px;
         padding-top: 200px;
@@ -710,6 +721,9 @@ cursor: pointer;
 }
 
 @media (max-width: 390px) {
+  #myModal-form .modal-dialog{
+      width: 300px;
+  }
   #home {
       height: 400px;
       padding-top: 170px;
