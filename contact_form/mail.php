@@ -8,8 +8,8 @@
 //
 //        $recepient = "grytsenko.kate.ua@gmail.com";
 //        $sitename = "Lasoft";
-//        
-        
+//
+
         $name = stripslashes($_POST["name"]);
         $email = stripslashes($_POST["email"]);
         $skype = stripslashes($_POST["skype"]);
@@ -18,19 +18,19 @@
         $error = '';
         $message = '<html>
                         <head>
-                            <title>Request</title> 
+                            <title>Request</title>
                         </head>
                         <body>
                             <p>Name: '.$name.'</p>
                             <p>Email: '.$email.'</p>
                             <p>Skype: '.$skype.'</p>
-                        </body>    
+                        </body>
             </html>';
-        
+
         if(!ValidateEmail($email)){
             $error = 'Email isn`t correct!';
         }
-        
+
         if(!$error){
             $mail = mail(CONTACT_FORM, $subject, $message,
                          "From: ".$name." <".$email.">\r\n"
@@ -40,9 +40,10 @@
                 echo 'OK';
             }
         }else{
-            echo '<div class="bg-danger">'.$error.'</div>';
+            echo 'Error Result 1111';
+            die();
         }
-          
+
     }
 
 ?>

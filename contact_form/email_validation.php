@@ -1,6 +1,6 @@
 <?php
     function ValidateEmail($value){
-        $regex = '/^({\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i';
+        $regex = '/^[_a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,10})$/';
         if($value == ''){
             return false;
         }else{

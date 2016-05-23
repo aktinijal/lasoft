@@ -86,6 +86,7 @@
           <label for="">Maybe you have some comment?</label>
           <textarea name="comment" class="form-control" rows="5"></textarea>
          </div>
+         <div class="error-message"></div>
          <button type="submit" class="btn form-button">thanks for trust!</button>
         </form>
         </div>
@@ -509,7 +510,7 @@ customers and partners. We try to understand every details of how potential user
 
          <div class="form-group">
           <label for="email">Type your e-mail, please</label>
-          <input name="email" type="email" class="form-control" id="email" placeholder="Email">
+          <input name="email"  class="form-control" id="email" placeholder="Email" pattern="^[_a-zA-Z0-9]+(\.[_a-zA-Z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,10})$">
          </div>
 
          <div class="form-group">
