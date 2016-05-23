@@ -31,10 +31,10 @@ $(document).ready(function(){
         .done(function(msg) {
             if(msg === "OK"){
                 var result = "Thanks for trust! We`ll contact you.";
-//                form.html(result);
                 form.html(result);
             }else{
-                form.html(msg);
+              $('.error-message').html(msg);
+                // form.html();
             }
         })
         .always(function() {
