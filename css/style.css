@@ -589,6 +589,16 @@ footer {
     border: 1px solid #fcba39;
 }
 
+.form-answer{
+  text-align: center;
+  font-weight: bold;
+}
+.form-answer-img-wrapper{
+  width: 250px;
+  height: 250px;
+  margin:20px auto;
+}
+
 /*****************************UP**************************/
 #scrollup{
 position: fixed;
@@ -718,7 +728,7 @@ cursor: pointer;
 }
 
 @media (max-width: 390px) {
-    
+
   #myModal-form .modal-dialog{
       width: 300px;
   }

@@ -16,30 +16,23 @@
         $comment = stripslashes($_POST["comment"]);
         $subject = 'Request';
         $error = '';
-        $message = '<html>
-                        <head>
-                            <title>Request</title>
-                        </head>
-                        <body>
-                            <p>Name: '.$name.'</p>
-                            <p>Email: '.$email.'</p>
-                            <p>Skype: '.$skype.'</p>
-                        </body>
-            </html>';
+        $message = "'Name:'.$name
+                    'Email:'.$email
+                    'Skype:'.$skype";
 
         if(!ValidateEmail($email)){
             $error = 'Email isn`t correct!';
         }
 
         if(!$error){
-            // Сообщение
-            $message = "Line 1\r\nLine 2\r\nLine 3";
-
-            // На случай если какая-то строка письма длиннее 70 символов мы используем wordwrap()
-            $message = wordwrap($message, 70, "\r\n");
+            // // Сообщение
+            // $message = "Line 1\r\nLine 2\r\nLine 3";
+            //
+            // // На случай если какая-то строка письма длиннее 70 символов мы используем wordwrap()
+            // $message = wordwrap($message, 70, "\r\n");
 
             // Отправляем
-            $mail = mail('info@lasoft.org', 'My Subject', $message);
+            $mail = mail('info@lasoft.org', $subject, $message);
 
             if($mail){
                 die('OK');

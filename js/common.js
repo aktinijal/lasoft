@@ -30,8 +30,7 @@ $(document).ready(function(){
         })
         .done(function(msg) {
             if(msg === "OK"){
-                var result = "Thanks for trust! We`ll contact you.";
-                form.html(result);
+                form.html("<div class='form-answer'>Thanks for trust! We`ll contact you. <div class='form-answer-img-wrapper'><img src='img/form-response.png' width='250px' heght='250px'></div>");
             }else{
               $('.error-message').html(msg);
                 // form.html();
